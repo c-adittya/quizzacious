@@ -1,5 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 export default function App() {
+	useEffect(() => {
+		document.title = "Quizzacious";  
+	  }, []);
 	const questions= [
 		{
 			questionText: 'Choose the right letter for the blank: _ for Vendetta (Movie)',
